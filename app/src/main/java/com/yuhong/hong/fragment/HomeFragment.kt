@@ -42,13 +42,13 @@ class HomeFragment : BaseFragment(), View.OnClickListener {
         when (v!!.id) {
             R.id.home_fab -> {
 
-                Toast.makeText(activity, "你点击了", Toast.LENGTH_LONG).show()
+//                Toast.makeText(activity, "你点击了", Toast.LENGTH_LONG).show()
 //                switchContent(HomeFragment(),SwitchFragment())
-                fragmentManager.beginTransaction()
-                        .setCustomAnimations(R.anim.slide_right_in, R.anim.slide_left_out)
-                        .replace(R.id.home_fl, SwitchFragment())
-                        .addToBackStack(null)
-                        .commit()
+//                fragmentManager.beginTransaction()
+//                        .setCustomAnimations(R.anim.slide_right_in, R.anim.slide_left_out)
+//                        .replace(R.id.home_fl, SwitchFragment())
+//                        .addToBackStack(null)
+//                        .commit()
 //                initFragment1()
             }
         }

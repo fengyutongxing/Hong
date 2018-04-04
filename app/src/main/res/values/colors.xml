@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#39F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主题颜色-->
+    <color name="top_color">#fd4b4d</color>
+    <color name="image_checked_bg">#66000000</color>
+
+    <!-- 常用颜色值 -->
+    <color name="white40">#40FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="main_green">#40AA53</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_black">#333</color>
+    <color name="main_purple">#576B95</color>
+    <color name="actionbar_background">@color/main_green</color>
+    <color name="transparent">#00000000</color>
+    <color name="window_background">#EBEBEB</color>
+
+    <!-- 半透明 -->
+    <color name="transparent_one_half">#30ffffff</color>
+
+    <!-- 半透明 -->
+    <color name="view_half">#60000000</color>
+    <!--TOP 字 -->
+    <color name="top_fon">#ED2509</color>
+
+    <color name="base_color">#ED2509</color>
+    <color name="font_default_color">#212121</color>
+    <color name="black">#000000</color>
+
+    <color name="msg_font_color">#999999</color>
+
+    <color name="line_color">#F1F1F1</color>
+    <color name="bg_popup">#EDEDED</color>
+
+</resources>

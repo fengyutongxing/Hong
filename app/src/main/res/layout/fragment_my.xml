@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.yuhong.hong.custom.CommonTitle
+            android:id="@+id/title_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.yuhong.hong.custom.CommonTitle>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+        <FrameLayout
+                android:id="@+id/rl_round_pic"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+            <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@mipmap/toux"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+            />
+            <ImageView
+                    android:id="@+id/btn_photo_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:src="@mipmap/portrait_edit"/>
+        </FrameLayout>
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_round_pic"
+                android:text="Simple"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+        />
+        <TextView
+                android:id="@+id/tv_workNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工号：100001"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/msg_font_color"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="5dp"/>
+        <Button
+                android:id="@+id/btn_infor"
+                android:layout_width="130dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="14dp"
+                android:background="@drawable/round_edittext"
+                android:layout_below="@+id/tv_workNum"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="个人信息"
+                android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="14dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

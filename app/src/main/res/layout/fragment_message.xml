@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line_color"
+              android:orientation="vertical">
+
+    <com.yuhong.hong.custom.CommonTitle
+            android:id="@+id/title_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.yuhong.hong.custom.CommonTitle>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/msg_rceyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/bg_popup" />
+    <TextView
+            android:id="@+id/conversationlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="暂无聊天消息"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+</LinearLayout>

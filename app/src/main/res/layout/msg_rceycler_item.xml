@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/white">
+
+
+    <ImageView
+            android:id="@+id/id_message_iv"
+            android:layout_width="@dimen/table_row_icon_size"
+            android:layout_height="@dimen/table_row_icon_size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/message"
+    />
+    <TextView
+            android:id="@+id/id_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/table_row_space"
+            android:layout_toRightOf="@+id/id_message_iv"
+            android:text="待办消息"
+            android:textColor="@color/font_default_color"
+            android:textSize="@dimen/table_row_label_size"/>
+
+    <ImageView
+            android:id="@+id/id_todo_indicator"
+            android:layout_width="@dimen/table_row_indicator_size"
+            android:layout_height="@dimen/table_row_indicator_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pt_right"/>
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="@dimen/table_row_lin_size"
+            android:layout_below="@+id/id_message_iv"></View>
+</RelativeLayout>

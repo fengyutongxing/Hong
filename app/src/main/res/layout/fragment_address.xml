@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tl="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <com.yuhong.hong.custom.CommonTitle
+            android:id="@+id/title_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.yuhong.hong.custom.CommonTitle>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/address_recyc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_below="@+id/title_Bar"></android.support.v7.widget.RecyclerView>
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_below="@+id/address_recyc"></View>
+
+
+    <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/address_slidingTab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            tl:tl_divider_color="#1A000000"
+            tl:tl_divider_padding="13dp"
+            tl:tl_divider_width="1dp"
+            tl:tl_indicator_color="#000000"
+            tl:tl_indicator_height="1.5dp"
+            tl:tl_tab_padding="22dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#000000"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="1dp"
+            android:layout_below="@+id/view"></com.flyco.tablayout.SlidingTabLayout>
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/address_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/address_slidingTab"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
